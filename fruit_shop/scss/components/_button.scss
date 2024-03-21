@@ -1,0 +1,14 @@
+.button {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: rotate(-14deg) translate(-50%, -50%);
+
+  &:hover {
+    color: var(--color-brand-green);
+    cursor: pointer;
+  }
+}

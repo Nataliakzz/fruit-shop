@@ -1,0 +1,42 @@
+.info-fruit-card {
+  width: 250px;
+  height: 390px;
+  border-radius: 500px;
+  text-align: center;
+  padding: 28px 24px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 170px;
+    height: 1px;
+    background-color: transparent;
+    box-shadow: 1px 220px 32px 1px black;
+    position: absolute;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  &__photo {
+    z-index: 1;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    max-width: 150px;
+  }
+}

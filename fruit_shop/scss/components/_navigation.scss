@@ -1,0 +1,8 @@
+.navigation {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    color: var(--color-brand-red);
+  }
+}

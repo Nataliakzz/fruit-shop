@@ -1,0 +1,39 @@
+.hero-side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &.left {
+    padding-bottom: 150px;
+  }
+
+  &__text {
+    max-width: 220px;
+    padding-bottom: 44px;
+  }
+
+  &__watermelon-card {
+    background-color: var(--color-brand-green);
+  }
+
+  &__title-watermelon-card {
+    flex: 1;
+  }
+
+  &.right {
+    padding-bottom: 246px;
+  }
+
+  &__strawberry-card {
+    background-color: var(--color-brand-yellow);
+  }
+
+  &__title-strawberry-card {
+    padding-bottom: 16px;
+  }
+
+  &__photo-strawberry-card {
+    max-width: 162px;
+    height: 185px;
+  }
+}
