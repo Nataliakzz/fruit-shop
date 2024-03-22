@@ -4,11 +4,24 @@
   height: 978px;
   padding: 0 62px;
 
+  @media screen and (max-width: $--bp-desktop) {
+    //flex-direction: column;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
   &__main-container {
     position: relative;
     max-width: 470px;
     flex: 1;
     margin: 0 auto;
+
+    @media screen and (max-width: $--bp-desktop) {
+      //order: 1;
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
   }
 
   &__container-title {
@@ -27,6 +40,36 @@
     font-size: 64px;
     font-weight: 500;
     line-height: 1;
+
+    @media screen and (max-width: $--bp-tablet) {
+      font-size: 50px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    &::before {
+      width: 184px;
+      height: 124px;
+      background-image: url(../images/banana.png);
+      transform: rotate(20deg);
+      top: 130px;
+      left: 64px;
+    }
+
+    &::after {
+      background-image: url(../images/strawberry.png);
+      width: 120px;
+      height: 120px;
+      right: -36px;
+      top: -30px;
+    }
   }
 
   &__photo-girl {
