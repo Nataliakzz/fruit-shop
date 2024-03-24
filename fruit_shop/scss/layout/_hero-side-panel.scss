@@ -7,6 +7,10 @@
     padding-top: 62px;
   }
 
+  @media screen and (max-width: $--bp-mobile) {
+    align-items: center;
+  }
+
   &.left {
     padding-bottom: 150px;
 
@@ -15,6 +19,12 @@
       grid-column: 1 / 2;
       align-self: start;
       padding-bottom: 0;
+
+      @media screen and (max-width: $--bp-mobile) {
+        grid-column: 1 / 1;
+        padding-top: 70px;
+        align-self: center;
+      }
     }
   }
 
@@ -44,6 +54,14 @@
       grid-column: 3 / 4;
       padding-bottom: 0;
     }
+
+    @media screen and (max-width: $--bp-mobile) {
+      grid-column: 1 / 1;
+      grid-row: 3;
+      align-items: center;
+      flex-direction: column-reverse;
+      padding-top: 44px;
+    }
   }
 
   &__strawberry-card {
@@ -66,5 +84,9 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 8px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      padding-top: 0;
+    }
   }
 }

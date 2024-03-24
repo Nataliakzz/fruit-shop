@@ -7,6 +7,11 @@
   font-weight: 500;
   transform: rotate(-14deg) translate(-50%, -50%);
 
+  @media screen and (max-width: $--bp-mobile) {
+    width: 80px;
+    height: 80px;
+  }
+
   &:hover {
     color: var(--color-brand-green);
     cursor: pointer;
