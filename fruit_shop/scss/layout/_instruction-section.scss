@@ -1,0 +1,42 @@
+.instruction-section {
+  &__title {
+    width: 774px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0 auto;
+    padding-bottom: 14px;
+  }
+
+  &__description {
+    width: 608px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 44px;
+  }
+
+  &__steps {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  &__step-title {
+    &--red {
+      background-color: var(--color-brand-red);
+    }
+    &--green {
+      background-color: var(--color-brand-green);
+    }
+    &--yellow {
+      background-color: var(--color-brand-yellow);
+    }
+  }
+
+  &__gif {
+    margin: 0 auto;
+    width: 860px;
+    height: 476px;
+  }
+}

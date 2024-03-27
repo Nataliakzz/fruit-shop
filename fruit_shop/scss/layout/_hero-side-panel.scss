@@ -79,7 +79,7 @@
 
   &__list-teg {
     padding-top: 44px;
-    max-width: 274px;
+    max-width: 282px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -87,6 +87,8 @@
 
     @media screen and (max-width: $--bp-mobile) {
       padding-top: 0;
+      padding-bottom: 44px;
+      max-width: 258px;
     }
   }
 }
