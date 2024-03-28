@@ -6,6 +6,17 @@
     line-height: 1.1;
     margin: 0 auto;
     padding-bottom: 14px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      width: 700px;
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 335px;
+      font-size: 28px;
+      line-height: 1;
+    }
   }
 
   &__description {
@@ -13,6 +24,10 @@
     margin: 0 auto;
     text-align: center;
     padding-bottom: 44px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 380px;
+    }
   }
 
   &__steps {
@@ -20,6 +35,16 @@
     gap: 24px;
     justify-content: center;
     margin-bottom: 80px;
+
+    @media screen and (max-width: $--bp-desktop) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      gap: 20px;
+      margin-bottom: 44px;
+    }
   }
 
   &__step-title {
@@ -36,7 +61,37 @@
 
   &__gif {
     margin: 0 auto;
-    width: 860px;
-    height: 476px;
+    border-radius: 20px;
+
+    &--desktop {
+      width: 860px;
+      height: 476px;
+
+      @media screen and (max-width: $--bp-tablet) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      width: 704px;
+      height: 476px;
+
+      @media screen and (min-width: $--bp-tablet) {
+        display: none;
+      }
+
+      @media screen and (max-width: $--bp-mobile) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      width: 335px;
+      height: 476px;
+
+      @media screen and (min-width: $--bp-mobile) {
+        display: none;
+      }
+    }
   }
 }
