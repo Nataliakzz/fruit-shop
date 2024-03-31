@@ -1,0 +1,96 @@
+.organic-fruits-section {
+  padding-top: 150px;
+
+  @media screen and (max-width: $--bp-tablet) {
+    padding-top: 144px;
+  }
+
+  @media screen and (max-width: $--bp-mobile) {
+    padding-top: 80px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding-bottom: 14px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 28px;
+      line-height: 1;
+    }
+  }
+
+  &__description {
+    width: 660px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 44px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 344px;
+    }
+  }
+
+  &__list-fruits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 12px;
+    justify-content: space-around;
+
+    @media screen and (max-width: $--bp-tablet) {
+      padding: 0 24px;
+    }
+  }
+
+  &__list-item {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 125px;
+    &.--strawberry {
+      background-color: #f8766b;
+      background-image: url(../images/product-strawberry.png);
+    }
+
+    &.--banana {
+      background-color: #edd251;
+      background-image: url(../images/product-banana.png);
+    }
+
+    &.--watermelon {
+      background-color: #9dc262;
+      background-image: url(../images/product-watermelon.png);
+    }
+
+    &.--lime {
+      background-color: #bfd663;
+      background-image: url(../images/product-lime.png);
+    }
+
+    &.--apple {
+      background-color: #e93f29;
+      background-image: url(../images/product-apple.png);
+    }
+
+    &.--peach {
+      background-color: #db4f4b;
+      background-image: url(../images/product-peach.png);
+    }
+
+    &.--plum {
+      background-color: #9b5366;
+      background-image: url(../images/product-plum.png);
+    }
+
+    &.--orange {
+      background-color: #f47f4c;
+      background-image: url(../images/product-orange.png);
+    }
+
+    &.--kiwi {
+      background-color: #98b37e;
+      background-image: url(../images/product-kiwi.png);
+    }
+  }
+}
