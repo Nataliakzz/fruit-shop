@@ -1,0 +1,105 @@
+.contacts-section {
+  padding-top: 150px;
+
+  @media screen and (max-width: $--bp-desktop) {
+    padding-top: 144px;
+  }
+
+  @media screen and (max-width: $--bp-tablet) {
+    padding-top: 80px;
+  }
+
+  &__container-title {
+    position: relative;
+    max-width: 740px;
+    height: 90px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $--bp-desktop) {
+      max-width: 600px;
+      height: 80px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      max-width: 300px;
+      height: 50px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+
+    @media screen and (max-width: $--bp-desktop) {
+      font-size: 54px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 32px;
+    }
+  }
+
+  &__container-photo {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+
+    @media screen and (max-width: $--bp-tablet) {
+      gap: 16px;
+    }
+  }
+
+  &__photo-blueberry {
+    width: 350px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      width: 344px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      display: none;
+    }
+  }
+
+  &__photo-malon-desktop {
+    display: none;
+    @media screen and (min-width: $--bp-desktop) {
+      display: flex;
+      width: 720px;
+    }
+  }
+
+  &__photo-malon-tablet {
+    @media screen and (min-width: $--bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__information {
+    padding: 80px 32px;
+    max-width: 722px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  &__input-email {
+    width: 290px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--color-brand-red);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      padding-left: 24px;
+    }
+  }
+}
