@@ -44,7 +44,7 @@
   &__container-photo {
     display: flex;
     gap: 24px;
-    justify-content: space-around;
+    justify-content: center;
 
     @media screen and (max-width: $--bp-tablet) {
       gap: 16px;
@@ -85,13 +85,24 @@
   }
 
   &__form {
+    position: relative;
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
+    width: 370px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $--bp-mobile) {
+      padding-bottom: 144px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      padding-bottom: 150px;
+    }
   }
 
   &__input-email {
-    width: 290px;
+    width: 100%;
     height: 50px;
     border-radius: 100px;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -101,5 +112,15 @@
       color: rgba(255, 255, 255, 0.5);
       padding-left: 24px;
     }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    color: var(--color-brand-white);
+    background-color: var(--color-brand-green);
+    padding: 17px 35px;
+    border: none;
+    border-radius: 100px;
   }
 }
